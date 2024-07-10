@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Highway Escape</string>
+    <string name="start">Start</string>
+    <string name="highest_score">Highest Score</string>
+    <string name="score_n0">Score\n0</string>
+    <string name="reset_highest_score">Reset Highest Score</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="545dp"
+        android:layout_height="972dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504"
+        app:srcCompat="@drawable/bg" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="155dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTintMode="multiply"
+        android:fontFamily="serif-monospace"
+        android:text="@string/start"
+        android:textColor="@color/ffe500"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:backgroundTint="#68393838"
+        app:layout_constraintBottom_toTopOf="@+id/highestScoreBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/highestScoreBtn"
+        android:layout_width="183dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="41dp"
+        android:backgroundTintMode="multiply"
+        android:text="@string/highest_score"
+        android:textColor="@color/e805d1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#6F393838"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/score_n0"
+        android:textAlignment="center"
+        android:textColor="@color/_000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resetHighestScoreBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="@string/reset_highest_score"
+        android:textColor="@color/ff3636"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:backgroundTint="@color/_92000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
